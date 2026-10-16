@@ -77,6 +77,9 @@ data handling, and beginner-level programming concepts.
 - Introduce quizzes about space
 - Improve accessibility and mobile interactions
 
+- LIVE DEMO LINK-
+astrospace-git-main-katyayniyadav18s-projects.vercel.app
+
 ## 👩‍💻 Developer
 
 **Katyayni Yadav**

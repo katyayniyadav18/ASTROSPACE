@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AstroVerse | Explore the Universe</title>
+
+    <meta
+        name="description"
+        content="Explore the Solar System with AstroVerse, an interactive space exploration website."
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            AstroVerse
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#planets">Planets</a>
+            <a href="#facts">Space Facts</a>
+            <a href="addo.html">Explore More</a>
+        </nav>
+
+        <a href="#planets" class="nav-button">Start Exploring ↗</a>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ✦ YOUR JOURNEY BEYOND EARTH
+                </p>
+
+                <h1>
+                    Discover the
+                    <span>Universe.</span>
+                </h1>
+
+                <p class="hero-description">
+                    From mysterious distant worlds to the wonders of our
+                    Solar System, explore the science, beauty and secrets
+                    of space — one planet at a time.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#planets" class="primary-button">
+                        Explore Planets →
+                    </a>
+
+                    <a href="addo.html" class="secondary-button">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <h3>08</h3>
+                        <p>Planets</p>
+                    </div>
+
+                    <div>
+                        <h3>∞</h3>
+                        <p>Possibilities</p>
+                    </div>
+
+                    <div>
+                        <h3>01</h3>
+                        <p>Solar System</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="solar-visual" aria-label="Illustration of the Solar System">
+
+                <div class="orbit orbit-one">
+                    <span class="planet-dot mercury-dot"></span>
+                </div>
+
+                <div class="orbit orbit-two">
+                    <span class="planet-dot venus-dot"></span>
+                </div>
+
+                <div class="orbit orbit-three">
+                    <span class="planet-dot earth-dot"></span>
+                </div>
+
+                <div class="orbit orbit-four">
+                    <span class="planet-dot mars-dot"></span>
+                </div>
+
+                <div class="sun">
+                    <span>☀</span>
+                </div>
+
+                <div class="visual-label">
+                    OUR SOLAR SYSTEM
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PLANETS SECTION -->
+
+        <section class="planets-section section" id="planets">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">THE CELESTIAL COLLECTION</p>
+
+                    <h2>Explore the Planets</h2>
+
+                    <p class="section-description">
+                        Eight unique worlds. Endless discoveries.
+                    </p>
+                </div>
+
+                <span class="planet-count">08 WORLDS</span>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="controls">
+
+                <div class="search-box">
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search planets..."
+                        aria-label="Search planets"
+                    >
+                </div>
+
+
+                <select id="sortSelect" aria-label="Sort planets">
+
+                    <option value="default">Default order</option>
+
+                    <option value="distance">
+                        Distance from Sun
+                    </option>
+
+                    <option value="size">
+                        Planet size
+                    </option>
+
+                    <option value="name">
+                        Alphabetical order
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <p id="resultCount" class="result-count">
+                Loading planets...
+            </p>
+
+
+            <div id="planetGrid" class="planet-grid">
+
+                <!-- JavaScript loads the planet cards here -->
+
+            </div>
+
+            <p id="emptyMessage" class="empty-message hidden">
+                No planets found. Try another search.
+            </p>
+
+        </section>
+
+
+        <!-- SPACE FACTS -->
+
+        <section class="facts-section section" id="facts">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">BEYOND YOUR IMAGINATION</p>
+
+                    <h2>Mind-Blowing Space Facts</h2>
+
+                    <p class="section-description">
+                        A little knowledge from the vast universe.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="facts-grid">
+
+                <article class="fact-card">
+
+                    <span class="fact-number">01 / SUN</span>
+
+                    <div class="fact-icon">☀</div>
+
+                    <h3>A Star at Our Centre</h3>
+
+                    <p>
+                        The Sun contains more than 99% of the total mass
+                        of the Solar System.
+                    </p>
+
+                </article>
+
+
+                <article class="fact-card">
+
+                    <span class="fact-number">02 / JUPITER</span>
+
+                    <div class="fact-icon">🪐</div>
+
+                    <h3>A Giant World</h3>
+
+                    <p>
+                        Jupiter is the largest planet in our Solar System.
+                    </p>
+
+                </article>
+
+
+                <article class="fact-card">
+
+                    <span class="fact-number">03 / NEPTUNE</span>
+
+                    <div class="fact-icon">🌌</div>
+
+                    <h3>A Distant Destination</h3>
+
+                    <p>
+                        Neptune takes approximately 165 Earth years to
+                        complete one orbit around the Sun.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="random-fact-box">
+
+                <div>
+                    <p class="eyebrow">YOUR DAILY COSMIC DISCOVERY</p>
+
+                    <h3 id="randomFact">
+                        The universe is full of surprises.
+                    </h3>
+                </div>
+
+                <button id="factButton" class="primary-button">
+                    Discover a Fact ↗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+
+        <section class="closing-section">
+
+            <p class="eyebrow">THE UNIVERSE IS WAITING</p>
+
+            <h2>
+                Stay Curious.
+                <span>Keep Exploring.</span>
+            </h2>
+
+            <p>
+                Every discovery begins with a question.
+                Your journey through space starts here.
+            </p>
+
+            <a href="addo.html" class="primary-button">
+                Continue Your Journey →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            AstroVerse
+        </a>
+
+        <p>
+            Built with curiosity, code and a love for space.
+        </p>
+
+        <p class="copyright">
+            © 2026 AstroVerse. Created as a learning project.
+        </p>
+
+    </footer>
+
+
+    <!-- PLANET DETAILS POPUP -->
+
+    <div
+        id="planetModal"
+        class="modal hidden"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalName"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-button"
+                aria-label="Close planet details"
+            >
+                ×
+            </button>
+
+            <div id="modalPlanetVisual" class="modal-planet-visual"></div>
+
+            <p id="modalType" class="eyebrow"></p>
+
+            <h2 id="modalName">Planet Name</h2>
+
+            <p id="modalDescription"></p>
+
+            <div id="modalStats" class="modal-stats"></div>
+
+            <div class="modal-fact">
+                <strong>Did you know?</strong>
+                <p id="modalFact"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
